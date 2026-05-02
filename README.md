@@ -58,8 +58,25 @@ Recursively searches directories and prints files that match a given pattern.
 # Search the directory 'src' for all files
 ./findLite ./src "*"
 ```
+---
 
-### Real Output Code using this repo
+## Test Directory Structure 
+findLite/
+├── Directory1/
+│   ├── dobby1.jpg
+│   ├── dobby2.png
+│   └── test.txt
+├── Directory2/
+│   ├── dobby1.jpg
+│   ├── dobby2.png
+│   └── test.txt
+├── findlite.c
+├── Makefile
+└── README.md
+
+---
+
+## Real Example Code
 ```bash
 # Using make to compile the code
 polzi@CamsDesktop:/mnt/c/Users/polzi/.vscode/GitHubRepos/findLite$ make
