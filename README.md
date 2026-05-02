@@ -61,18 +61,18 @@ Recursively searches directories and prints files that match a given pattern.
 ---
 
 ## Test Directory Structure 
-findLite/
-├── Directory1/
-│   ├── dobby1.jpg
-│   ├── dobby2.png
-│   └── test.txt
-├── Directory2/
-│   ├── dobby1.jpg
-│   ├── dobby2.png
-│   └── test.txt
-├── findlite.c
-├── Makefile
-└── README.md
+findLite/  
+├── Directory1/  
+│   ├── dobby1.jpg  
+│   ├── dobby2.png  
+│   └── test.txt  
+├── Directory2/  
+│   ├── dobby1.jpg  
+│   ├── dobby2.png  
+│   └── test.txt  
+├── findlite.c  
+├── Makefile  
+└── README.md  
 
 ---
 
