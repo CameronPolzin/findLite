@@ -73,7 +73,11 @@ void searchDirectory(char *basePath, char *pattern) {
 
         // Build full path: basePath + "/" + filename
         char fullPath[1024];
-        snprintf(fullPath, sizeof(fullPath), "%s/%s", basePath, entry->d_name);
+        if (basePath[strlen(basePath) - 1] == '/') {
+            snprintf(fullPath, sizeof(fullPath), "%s%s", basePath, entry->d_name);
+        } else {
+            snprintf(fullPath, sizeof(fullPath), "%s/%s", basePath, entry->d_name);
+        }
 
         // Check if the filename matches the pattern
         if (matchesPattern(entry->d_name, pattern)) {
