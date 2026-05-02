@@ -33,7 +33,7 @@ Recursively searches directories and prints files that match a given pattern.
 ---
 
 ## Usage
-./findLite <directory> <pattern>
+./findLite 'directory' 'pattern'
 ### Pattern Rules
 - The pattern must contain exactly one `*`
 - The `*` can only be used at the beginning or the end
@@ -41,6 +41,8 @@ Recursively searches directories and prints files that match a given pattern.
 - `*.txt` -> matches all files that end with `.txt` 
 - `test*` -> matches all files that start with `test`
 - `*` -> matches all files in the directory 
+
+---
 
 ## Example
 ```bash
@@ -57,25 +59,7 @@ Recursively searches directories and prints files that match a given pattern.
 ./findLite ./src "*"
 ```
 
----
-
-## Test Directory Structure 
-findLite/
-├── Directory1/
-│   ├── dobby1.jpg
-│   ├── dobby2.png
-│   └── test.txt
-├── Directory2/
-│   ├── dobby1.jpg
-│   ├── dobby2.png
-│   └── test.txt
-├── findlite.c
-├── Makefile
-└── README.md
-
----
-
-## Real Output Code using this repo
+### Real Output Code using this repo
 ```bash
 # Using make to compile the code
 polzi@CamsDesktop:/mnt/c/Users/polzi/.vscode/GitHubRepos/findLite$ make
